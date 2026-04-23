@@ -15,6 +15,6 @@ component "infra" {
   }
 
   providers = {
-    tfcoremock = provider.null.this
+    null = provider.null.this
   }
 }
