@@ -1,11 +1,11 @@
 required_providers {
-  null = {
-    source  = "hashicorp/null"
-    version = "~> 3.2.3"
+  random = {
+    source  = "hashicorp/random"
+    version = "3.8.1"
   }
 }
 
-provider "null" "this" {
+provider "random" "this" {
   
 }
 
@@ -15,6 +15,6 @@ component "infra" {
   }
 
   providers = {
-    null = provider.null.this
+    random = provider.random.this
   }
 }
